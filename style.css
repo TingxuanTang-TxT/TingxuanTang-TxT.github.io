@@ -1,0 +1,238 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+  max-width: 1500px;
+  margin: 60px auto;  /* 原来是 2rem auto → 改为上 4rem */
+  margin-left: 40px;
+  gap: 6rem;
+  padding: 0 1rem;
+}
+
+.profile-left {
+  width: 280px;         /* 或更宽些 */
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2px;
+  padding-left: 1px;   /* 可选，控制距离左边的留白 */
+}
+
+.avatar-container {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 10px double #004c99;
+}
+
+.avatar {
+  width: 500px; /* 整体放大图像 */
+  height: auto;
+  transform: translate(-110px, -140px); /* 向左/上移动，让人居中 */
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1rem 1rem 1rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.name {
+  font-size: 2.5rem;  /* 默认可能是 2rem，改成更大 */
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  /*margin: 0 0.5rem;*/
+  text-decoration: none;
+  color: #004c99;
+  font-weight: bold;
+}
+
+.nav-bar {
+  /*margin-bottom: 2rem;*/
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-bar a {
+  /*margin: 0 0.5rem;*/
+  text-decoration: none;
+  color: #004c99;
+  font-weight: bold;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+  max-width: 1000px;
+  margin: 1rem auto;
+  margin-bottom: 0px;
+  gap: 2rem;
+  /*padding: 0 1rem;*/
+}
+
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+
+.profile-left a {
+  display: block;
+  margin: 0.5rem 0;
+  color: #004c99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* 让所有子元素左对齐 */
+  padding-left: 1rem;           /* 也可设为 eg. 1rem 以增加一致性间距 */
+}
+.pronounce-note {
+  font-size: 0.8rem;      /* smaller font */
+  font-weight: bold; /* prevent bolding */
+  color: #666;            /* slightly muted */
+}
+
+.audio-icon {
+  text-decoration: none;   /* ✅ Removes underline */
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.sidebar a {
+  display: block;
+  /*margin: 0.5rem 0;*/
+  color: #007acc;
+  text-decoration: none;
+}
+
+.content {
+  /*text-align: left;       !* ✅ 所有文字靠左 *!*/
+  /*padding-left: 2rem;*/
+  flex: 1;
+  background: transparent;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  /*padding: 0;*/
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.home-content{
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+
+}
+
+.cv-columns {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 0;
+}
+
+.cv-left,
+.cv-right {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: auto; /* ✅ 去掉每个框下方空白 */
+  padding-bottom: 0px;
+}
+
+.cv-image {
+  width: 420px;
+  max-width: 90%;
+  height: 520px;
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.internship-entry {
+  margin-bottom: 2rem;
+}
+
+.entry-header,
+.entry-subheader {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.entry-subheader {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.entry-location,
+.entry-date {
+  font-style: normal;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.internship-entry ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+footer.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #007acc;
+  margin: 0 0.3rem;
+  text-decoration: none;
+}
+
+
+
+
+
